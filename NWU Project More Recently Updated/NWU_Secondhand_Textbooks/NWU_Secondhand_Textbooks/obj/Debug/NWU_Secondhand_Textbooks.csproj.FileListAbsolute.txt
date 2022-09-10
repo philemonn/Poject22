@@ -1,0 +1,36 @@
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.exe.config
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.exe
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.pdb
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.AssemblyReference.cache
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.SuggestedBindingRedirects.cache
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.Availible_Textbooks.resources
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.frmSignIn.resources
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.MaintainAuthor.resources
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.MaintainClients.resources
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.MaintainTextbook.resources
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.Properties.Resources.resources
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.GenerateResource.cache
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.CoreCompileInputs.cache
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.exe
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.pdb
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.Conditions.resources
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.RequestReport.resources
+C:\Users\OEM\Desktop\PROJECT SQL PRACTICE\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.StaffMenu.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.AssemblyReference.cache
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.SuggestedBindingRedirects.cache
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.Availible_Textbooks.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.Conditions.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.frmSignIn.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.MaintainAuthor.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.MaintainClients.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.MaintainTextbook.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.Properties.Resources.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.RequestReport.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.StaffMenu.resources
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.GenerateResource.cache
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.CoreCompileInputs.cache
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.exe
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.pdb
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.exe.config
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.exe
+C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.pdb
