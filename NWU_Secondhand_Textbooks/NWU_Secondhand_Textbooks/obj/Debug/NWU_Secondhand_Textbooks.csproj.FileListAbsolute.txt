@@ -34,3 +34,6 @@ C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Deb
 C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.exe.config
 C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.exe
 C:\Users\trazm\Desktop\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\bin\Debug\NWU_Secondhand_Textbooks.pdb
+C:\Users\sanri\Downloads\Poject22-main\Poject22-main\NWU Project More Recently Updated\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.csproj.AssemblyReference.cache
+C:\Users\sanri\Downloads\Poject22-main\Poject22-main\NWU Project More Recently Updated\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.exe
+C:\Users\sanri\Downloads\Poject22-main\Poject22-main\NWU Project More Recently Updated\NWU_Secondhand_Textbooks\NWU_Secondhand_Textbooks\obj\Debug\NWU_Secondhand_Textbooks.pdb

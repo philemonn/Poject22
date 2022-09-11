@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MaintainTextbook));
             this.pnlTextbook = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -86,6 +87,14 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.ttName = new System.Windows.Forms.ToolTip(this.components);
+            this.ttEdition = new System.Windows.Forms.ToolTip(this.components);
+            this.ttPrice = new System.Windows.Forms.ToolTip(this.components);
+            this.ttQuality = new System.Windows.Forms.ToolTip(this.components);
+            this.ttModCode = new System.Windows.Forms.ToolTip(this.components);
+            this.ttAuthName = new System.Windows.Forms.ToolTip(this.components);
+            this.ttAdd = new System.Windows.Forms.ToolTip(this.components);
+            this.ttRemove = new System.Windows.Forms.ToolTip(this.components);
             this.pnlTextbook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -159,6 +168,7 @@
             this.tbClient.SelectedIndex = 0;
             this.tbClient.Size = new System.Drawing.Size(935, 413);
             this.tbClient.TabIndex = 3;
+            this.ttPrice.SetToolTip(this.tbClient, "Chose a price for the textbook");
             this.tbClient.SelectedIndexChanged += new System.EventHandler(this.tbClient_SelectedIndexChanged);
             // 
             // tbpInsert
@@ -206,6 +216,7 @@
             this.nudInsert.Name = "nudInsert";
             this.nudInsert.Size = new System.Drawing.Size(136, 23);
             this.nudInsert.TabIndex = 43;
+            this.ttPrice.SetToolTip(this.nudInsert, "Chose a price for the textbook");
             // 
             // cbEddition
             // 
@@ -214,6 +225,7 @@
             this.cbEddition.Name = "cbEddition";
             this.cbEddition.Size = new System.Drawing.Size(136, 25);
             this.cbEddition.TabIndex = 29;
+            this.ttEdition.SetToolTip(this.cbEddition, "Chose the codition of the textbook");
             this.cbEddition.TextChanged += new System.EventHandler(this.cbEddition_TextChanged);
             // 
             // cbModCode
@@ -223,6 +235,7 @@
             this.cbModCode.Name = "cbModCode";
             this.cbModCode.Size = new System.Drawing.Size(136, 25);
             this.cbModCode.TabIndex = 28;
+            this.ttModCode.SetToolTip(this.cbModCode, "Chose the module code for the textbook");
             this.cbModCode.TextChanged += new System.EventHandler(this.cbModCode_TextChanged);
             // 
             // cbQuality
@@ -232,6 +245,7 @@
             this.cbQuality.Name = "cbQuality";
             this.cbQuality.Size = new System.Drawing.Size(136, 25);
             this.cbQuality.TabIndex = 27;
+            this.ttQuality.SetToolTip(this.cbQuality, "Chose the quality of the textbook");
             this.cbQuality.SelectedIndexChanged += new System.EventHandler(this.cbQuality_SelectedIndexChanged);
             this.cbQuality.TextChanged += new System.EventHandler(this.cbQuality_TextChanged);
             // 
@@ -242,6 +256,7 @@
             this.cbAuthor.Name = "cbAuthor";
             this.cbAuthor.Size = new System.Drawing.Size(136, 25);
             this.cbAuthor.TabIndex = 26;
+            this.ttAuthName.SetToolTip(this.cbAuthor, "Select the Authors name");
             this.cbAuthor.TextChanged += new System.EventHandler(this.cbAuthor_TextChanged);
             // 
             // lblSelectAuthor
@@ -332,6 +347,7 @@
             this.txtBookName.Name = "txtBookName";
             this.txtBookName.Size = new System.Drawing.Size(136, 23);
             this.txtBookName.TabIndex = 1;
+            this.ttName.SetToolTip(this.txtBookName, "Enter the textbook name");
             // 
             // btnAddBook
             // 
@@ -341,6 +357,7 @@
             this.btnAddBook.Size = new System.Drawing.Size(169, 38);
             this.btnAddBook.TabIndex = 0;
             this.btnAddBook.Text = "Add book to the system";
+            this.ttAdd.SetToolTip(this.btnAddBook, "Click to add the Textbook");
             this.btnAddBook.UseVisualStyleBackColor = true;
             this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
             // 
@@ -407,6 +424,7 @@
             this.nudDelete.Name = "nudDelete";
             this.nudDelete.Size = new System.Drawing.Size(136, 23);
             this.nudDelete.TabIndex = 42;
+            this.ttPrice.SetToolTip(this.nudDelete, "Chose a price for the textbook");
             this.nudDelete.ValueChanged += new System.EventHandler(this.nudDelete_ValueChanged);
             // 
             // cbDeleteEdition
@@ -416,6 +434,7 @@
             this.cbDeleteEdition.Name = "cbDeleteEdition";
             this.cbDeleteEdition.Size = new System.Drawing.Size(136, 25);
             this.cbDeleteEdition.TabIndex = 41;
+            this.ttEdition.SetToolTip(this.cbDeleteEdition, "Chose the eddition of the textbook");
             this.cbDeleteEdition.SelectedIndexChanged += new System.EventHandler(this.cbDeleteEdition_SelectedIndexChanged);
             this.cbDeleteEdition.TextUpdate += new System.EventHandler(this.cbDeleteEdition_TextUpdate);
             this.cbDeleteEdition.TextChanged += new System.EventHandler(this.cbDeleteEdition_TextChanged);
@@ -427,6 +446,7 @@
             this.cbDeleteModule.Name = "cbDeleteModule";
             this.cbDeleteModule.Size = new System.Drawing.Size(136, 25);
             this.cbDeleteModule.TabIndex = 40;
+            this.ttModCode.SetToolTip(this.cbDeleteModule, "Chose the module code for the textbook");
             this.cbDeleteModule.SelectedIndexChanged += new System.EventHandler(this.cbDeleteModule_SelectedIndexChanged);
             this.cbDeleteModule.TextUpdate += new System.EventHandler(this.cbDeleteModule_TextUpdate);
             this.cbDeleteModule.TextChanged += new System.EventHandler(this.cbDeleteModule_TextChanged);
@@ -438,6 +458,7 @@
             this.cbDeleteQuality.Name = "cbDeleteQuality";
             this.cbDeleteQuality.Size = new System.Drawing.Size(136, 25);
             this.cbDeleteQuality.TabIndex = 39;
+            this.ttQuality.SetToolTip(this.cbDeleteQuality, "Chose the quality of the textbook");
             this.cbDeleteQuality.SelectedIndexChanged += new System.EventHandler(this.cbDeleteQuality_SelectedIndexChanged);
             this.cbDeleteQuality.TextUpdate += new System.EventHandler(this.cbDeleteQuality_TextUpdate);
             this.cbDeleteQuality.TextChanged += new System.EventHandler(this.cbDeleteQuality_TextChanged);
@@ -449,6 +470,7 @@
             this.cbDeleteAuthor.Name = "cbDeleteAuthor";
             this.cbDeleteAuthor.Size = new System.Drawing.Size(136, 25);
             this.cbDeleteAuthor.TabIndex = 38;
+            this.ttAuthName.SetToolTip(this.cbDeleteAuthor, "Select the Authors name");
             this.cbDeleteAuthor.SelectedIndexChanged += new System.EventHandler(this.cbDeleteAuthor_SelectedIndexChanged);
             this.cbDeleteAuthor.TextUpdate += new System.EventHandler(this.cbDeleteAuthor_TextUpdate);
             this.cbDeleteAuthor.TextChanged += new System.EventHandler(this.cbDeleteAuthor_TextChanged);
@@ -520,6 +542,7 @@
             this.txtDeleteName.Name = "txtDeleteName";
             this.txtDeleteName.Size = new System.Drawing.Size(136, 23);
             this.txtDeleteName.TabIndex = 30;
+            this.ttName.SetToolTip(this.txtDeleteName, "Enter the textbook name");
             this.txtDeleteName.TextChanged += new System.EventHandler(this.txtDeleteName_TextChanged);
             // 
             // lstDelete
@@ -540,6 +563,7 @@
             this.btnRemoveClient.Size = new System.Drawing.Size(114, 46);
             this.btnRemoveClient.TabIndex = 13;
             this.btnRemoveClient.Text = "Remove Client from the system";
+            this.ttRemove.SetToolTip(this.btnRemoveClient, "Click to remove this Author from the system");
             this.btnRemoveClient.UseVisualStyleBackColor = true;
             this.btnRemoveClient.Click += new System.EventHandler(this.btnRemoveClient_Click);
             // 
@@ -563,7 +587,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(320, 3);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(218, 16);
+            this.label14.Size = new System.Drawing.Size(219, 16);
             this.label14.TabIndex = 18;
             this.label14.Text = "Please Select TextBook To Delete:";
             // 
@@ -615,6 +639,7 @@
             this.nudUpdate.Name = "nudUpdate";
             this.nudUpdate.Size = new System.Drawing.Size(136, 22);
             this.nudUpdate.TabIndex = 43;
+            this.ttPrice.SetToolTip(this.nudUpdate, "Chose a price for the textbook");
             this.nudUpdate.ValueChanged += new System.EventHandler(this.nudUpdate_ValueChanged);
             // 
             // cbUpdateEdition
@@ -624,6 +649,7 @@
             this.cbUpdateEdition.Name = "cbUpdateEdition";
             this.cbUpdateEdition.Size = new System.Drawing.Size(136, 24);
             this.cbUpdateEdition.TabIndex = 41;
+            this.ttEdition.SetToolTip(this.cbUpdateEdition, "Chose the eddition of the textbook");
             this.cbUpdateEdition.SelectedIndexChanged += new System.EventHandler(this.cbUpdateEdition_SelectedIndexChanged);
             this.cbUpdateEdition.TextUpdate += new System.EventHandler(this.cbUpdateEdition_TextUpdate);
             this.cbUpdateEdition.TextChanged += new System.EventHandler(this.cbUpdateEdition_TextChanged);
@@ -642,10 +668,11 @@
             // cbUpdateQuality
             // 
             this.cbUpdateQuality.FormattingEnabled = true;
-            this.cbUpdateQuality.Location = new System.Drawing.Point(160, 161);
+            this.cbUpdateQuality.Location = new System.Drawing.Point(160, 164);
             this.cbUpdateQuality.Name = "cbUpdateQuality";
             this.cbUpdateQuality.Size = new System.Drawing.Size(136, 24);
             this.cbUpdateQuality.TabIndex = 39;
+            this.ttQuality.SetToolTip(this.cbUpdateQuality, "Chose the quality of the textbook");
             this.cbUpdateQuality.SelectedIndexChanged += new System.EventHandler(this.cbUpdateQuality_SelectedIndexChanged);
             this.cbUpdateQuality.TextUpdate += new System.EventHandler(this.cbUpdateQuality_TextUpdate);
             this.cbUpdateQuality.TextChanged += new System.EventHandler(this.cbUpdateQuality_TextChanged);
@@ -667,7 +694,7 @@
             this.label7.Location = new System.Drawing.Point(16, 243);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 16);
+            this.label7.Size = new System.Drawing.Size(90, 16);
             this.label7.TabIndex = 37;
             this.label7.Text = "Select Author:";
             // 
@@ -677,7 +704,7 @@
             this.label8.Location = new System.Drawing.Point(16, 203);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 16);
+            this.label8.Size = new System.Drawing.Size(92, 16);
             this.label8.TabIndex = 36;
             this.label8.Text = "Module Code:";
             // 
@@ -687,7 +714,7 @@
             this.label9.Location = new System.Drawing.Point(16, 164);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 16);
+            this.label9.Size = new System.Drawing.Size(112, 16);
             this.label9.TabIndex = 35;
             this.label9.Text = "Textbook Quality:";
             // 
@@ -697,7 +724,7 @@
             this.label11.Location = new System.Drawing.Point(16, 122);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(101, 16);
+            this.label11.Size = new System.Drawing.Size(102, 16);
             this.label11.TabIndex = 34;
             this.label11.Text = "Textbook Price:";
             // 
@@ -707,7 +734,7 @@
             this.label12.Location = new System.Drawing.Point(16, 83);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 16);
+            this.label12.Size = new System.Drawing.Size(112, 16);
             this.label12.TabIndex = 33;
             this.label12.Text = "Textbook Edition:";
             // 
@@ -717,7 +744,7 @@
             this.label13.Location = new System.Drawing.Point(16, 42);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(107, 16);
+            this.label13.Size = new System.Drawing.Size(108, 16);
             this.label13.TabIndex = 32;
             this.label13.Text = "Textbook Name:";
             // 
@@ -728,6 +755,7 @@
             this.txtUpdateName.Name = "txtUpdateName";
             this.txtUpdateName.Size = new System.Drawing.Size(136, 22);
             this.txtUpdateName.TabIndex = 30;
+            this.ttName.SetToolTip(this.txtUpdateName, "Enter the textbook name");
             this.txtUpdateName.TextChanged += new System.EventHandler(this.txtUpdateName_TextChanged);
             // 
             // btnUpdate
@@ -855,5 +883,13 @@
         private System.Windows.Forms.NumericUpDown nudInsert;
         private System.Windows.Forms.NumericUpDown nudDelete;
         private System.Windows.Forms.NumericUpDown nudUpdate;
+        private System.Windows.Forms.ToolTip ttPrice;
+        private System.Windows.Forms.ToolTip ttEdition;
+        private System.Windows.Forms.ToolTip ttModCode;
+        private System.Windows.Forms.ToolTip ttQuality;
+        private System.Windows.Forms.ToolTip ttAuthName;
+        private System.Windows.Forms.ToolTip ttName;
+        private System.Windows.Forms.ToolTip ttAdd;
+        private System.Windows.Forms.ToolTip ttRemove;
     }
 }

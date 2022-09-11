@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignIn));
             this.pnlSignIn = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -37,6 +38,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.lblInstruction = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.ttStaff = new System.Windows.Forms.ToolTip(this.components);
+            this.ttClose = new System.Windows.Forms.ToolTip(this.components);
+            this.ttStudent = new System.Windows.Forms.ToolTip(this.components);
             this.pnlSignIn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,7 +54,7 @@
             this.pnlSignIn.Controls.Add(this.pictureBox1);
             this.pnlSignIn.Controls.Add(this.lblStoreHeading);
             this.pnlSignIn.Location = new System.Drawing.Point(-46, 10);
-            this.pnlSignIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlSignIn.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSignIn.Name = "pnlSignIn";
             this.pnlSignIn.Size = new System.Drawing.Size(797, 88);
             this.pnlSignIn.TabIndex = 0;
@@ -59,7 +63,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(591, -2);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(133, 88);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -70,7 +74,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(45, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,7 +95,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(102, 258);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 27);
             this.button1.TabIndex = 1;
@@ -102,7 +106,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(444, 258);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(64, 27);
             this.button2.TabIndex = 2;
@@ -131,6 +135,18 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ttStaff
+            // 
+            this.ttStaff.Tag = "Click if you are a staff member";
+            // 
+            // ttClose
+            // 
+            this.ttClose.Tag = "Click to close the program";
+            // 
+            // ttStudent
+            // 
+            this.ttStudent.Tag = "Click if you are a Student";
+            // 
             // frmSignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,7 +158,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pnlSignIn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSignIn";
             this.Text = "Sign In";
             this.pnlSignIn.ResumeLayout(false);
@@ -164,6 +180,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblInstruction;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.ToolTip ttStaff;
+        private System.Windows.Forms.ToolTip ttClose;
+        private System.Windows.Forms.ToolTip ttStudent;
     }
 }
 

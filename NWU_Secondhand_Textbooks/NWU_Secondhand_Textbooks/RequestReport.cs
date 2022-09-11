@@ -251,6 +251,27 @@ namespace NWU_Secondhand_Textbooks
                 crtReport.ChartAreas[0].AxisX.Title = xval;
                 crtReport.ChartAreas[0].AxisY.Title = yval;
 
+                /*//only adjust the size when there are also negative values for the 
+                if (rbProfitGraph.Checked)
+                {
+                    //getting the min and max values from the data
+                    cmd = new SqlCommand($"Select Max(Total) From ({sql})", conn);
+                    reader = cmd.ExecuteReader();
+                    reader.Read();
+                    int max = reader.GetInt32(0);
+                    reader.Close();
+
+                    cmd = new SqlCommand($"Select Min(Total) From ({sql})", conn);
+                    reader = cmd.ExecuteReader();
+                    reader.Read();
+                    int min = reader.GetInt32(0);
+                    reader.Close();
+
+                    //setting the minimum and maximum values
+                    crtReport.ChartAreas[0].AxisY.Minimum = min;
+                    crtReport.ChartAreas[0].AxisY.Maximum = max;
+                }*/
+
                 //adding a heading
                 crtReport.Titles.Add(heading);
 
@@ -436,9 +457,6 @@ namespace NWU_Secondhand_Textbooks
             {
                 modCode = "";
             }
-            
-            //clearing the listbox
-            lstOutput.Items.Clear();
         }
 
         private void gpbReport_Enter(object sender, EventArgs e)
@@ -460,8 +478,8 @@ namespace NWU_Secondhand_Textbooks
                 if (dtpGraph1.Value.Equals(DateTime.Today))
                 {
                     //creating the sql command
-                    sql = @"Select (SUM(CASE WHEN Trans_Detail.Trans_Type = 1 THEN Trans_Detail.PricePaid Else 0 END) - SUM(CASE WHEN Trans_Detail.Trans_Type = 0 THEN Trans_Detail.PricePaid Else 0 END))  As Total, Module.ModuleCode as ModuleCode from Trans_Detail
-                            Join Textbook on Trans_Detail.Txt_ID = Textbook.Txt_ID
+                    sql = @"Select (SUM(CASE WHEN Trans_Detail.Trans_Type = 1 THEN Trans_Detail.PricePaid END) - SUM(CASE WHEN Trans_Detail.Trans_Type = 0 THEN Trans_Detail.PricePaid END))  As Total, Module.ModuleCode as ModuleCode from Trans_Detail
+                            Left Join Textbook on Trans_Detail.Txt_ID = Textbook.Txt_ID
                             Join Module ON Textbook.Module_CodeID = Module.Module_CodeID
                             Group by Module.ModuleCode";
                     updatechart(sql, "Total Profit Between And", "Profit", "ModuleCode", "Total");
@@ -470,11 +488,10 @@ namespace NWU_Secondhand_Textbooks
                 else
                 {
                     //creating the sql command
-                    sql = @"Select (SUM(CASE WHEN Trans_Detail.Trans_Type = 1 THEN Trans_Detail.PricePaid Else 0 END) - SUM(CASE WHEN Trans_Detail.Trans_Type = 0 THEN Trans_Detail.PricePaid Else 0 END))  As Total, Module.ModuleCode as ModuleCode from Trans_Detail
-                            Join Textbook on Trans_Detail.Txt_ID = Textbook.Txt_ID
+                    sql = @"Select (SUM(CASE WHEN Trans_Detail.Trans_Type = 1 THEN Trans_Detail.PricePaid END) - SUM(CASE WHEN Trans_Detail.Trans_Type = 0 THEN Trans_Detail.PricePaid END))  As Total, Module.ModuleCode as ModuleCode from Trans_Detail
+                            Left Join Textbook on Trans_Detail.Txt_ID = Textbook.Txt_ID
                             Join Module ON Textbook.Module_CodeID = Module.Module_CodeID
                             Group by Module.ModuleCode";
-
                     updatechart(sql, "Total Profit", "Profit", "ModuleCode", "Total");
                 }
             }
@@ -571,7 +588,6 @@ namespace NWU_Secondhand_Textbooks
                             Join Module ON Textbook.Module_CodeID = Module.Module_CodeID
                             where (Trans_Detail.Trans_Type = 0 OR Trans_Detail.Trans_Type Is Null) AND TextBook.Txt_ID IS NOT null
                             Group by Module.ModuleCode";
-                    
                     updatechart(sql, "Total Inventory", "Inventory", "ModuleCode", "Total"); 
                 }
             }

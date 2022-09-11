@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Conditions));
             this.pnlTextbook = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -45,6 +46,10 @@
             this.tbCondition = new System.Windows.Forms.TabControl();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.ttClose = new System.Windows.Forms.ToolTip(this.components);
+            this.ttBack = new System.Windows.Forms.ToolTip(this.components);
+            this.ttID = new System.Windows.Forms.ToolTip(this.components);
+            this.ttQuality = new System.Windows.Forms.ToolTip(this.components);
             this.pnlTextbook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +65,7 @@
             this.pnlTextbook.Controls.Add(this.pictureBox1);
             this.pnlTextbook.Controls.Add(this.lblconditions);
             this.pnlTextbook.Location = new System.Drawing.Point(0, 2);
-            this.pnlTextbook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlTextbook.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTextbook.Name = "pnlTextbook";
             this.pnlTextbook.Size = new System.Drawing.Size(742, 90);
             this.pnlTextbook.TabIndex = 5;
@@ -69,7 +74,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(574, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(133, 88);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,7 +85,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,7 +107,7 @@
             // 
             this.tbNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNew.Location = new System.Drawing.Point(4, 22);
-            this.tbNew.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNew.Margin = new System.Windows.Forms.Padding(2);
             this.tbNew.Name = "tbNew";
             this.tbNew.Size = new System.Drawing.Size(684, 314);
             this.tbNew.TabIndex = 2;
@@ -120,9 +125,9 @@
             this.tbpInsert.Controls.Add(this.btnUpdateCOn);
             this.tbpInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbpInsert.Location = new System.Drawing.Point(4, 22);
-            this.tbpInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbpInsert.Margin = new System.Windows.Forms.Padding(2);
             this.tbpInsert.Name = "tbpInsert";
-            this.tbpInsert.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbpInsert.Padding = new System.Windows.Forms.Padding(2);
             this.tbpInsert.Size = new System.Drawing.Size(684, 314);
             this.tbpInsert.TabIndex = 0;
             this.tbpInsert.Tag = "";
@@ -133,25 +138,27 @@
             // 
             this.cbQuality.FormattingEnabled = true;
             this.cbQuality.Location = new System.Drawing.Point(128, 122);
-            this.cbQuality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbQuality.Margin = new System.Windows.Forms.Padding(2);
             this.cbQuality.Name = "cbQuality";
             this.cbQuality.Size = new System.Drawing.Size(92, 25);
             this.cbQuality.TabIndex = 10;
+            this.ttQuality.SetToolTip(this.cbQuality, "Select the new quality of the textbook");
             // 
             // cbTextbookID
             // 
             this.cbTextbookID.FormattingEnabled = true;
             this.cbTextbookID.Location = new System.Drawing.Point(128, 63);
-            this.cbTextbookID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbTextbookID.Margin = new System.Windows.Forms.Padding(2);
             this.cbTextbookID.Name = "cbTextbookID";
             this.cbTextbookID.Size = new System.Drawing.Size(92, 25);
             this.cbTextbookID.TabIndex = 9;
+            this.ttID.SetToolTip(this.cbTextbookID, "Select the ID of the textbook");
             // 
             // dgMaintainCondition
             // 
             this.dgMaintainCondition.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgMaintainCondition.Location = new System.Drawing.Point(325, 15);
-            this.dgMaintainCondition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgMaintainCondition.Margin = new System.Windows.Forms.Padding(2);
             this.dgMaintainCondition.Name = "dgMaintainCondition";
             this.dgMaintainCondition.RowHeadersWidth = 51;
             this.dgMaintainCondition.RowTemplate.Height = 24;
@@ -191,7 +198,7 @@
             // btnUpdateCOn
             // 
             this.btnUpdateCOn.Location = new System.Drawing.Point(128, 229);
-            this.btnUpdateCOn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdateCOn.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateCOn.Name = "btnUpdateCOn";
             this.btnUpdateCOn.Size = new System.Drawing.Size(100, 38);
             this.btnUpdateCOn.TabIndex = 0;
@@ -204,7 +211,7 @@
             this.tbCondition.Controls.Add(this.tbpInsert);
             this.tbCondition.Controls.Add(this.tbNew);
             this.tbCondition.Location = new System.Drawing.Point(-2, 98);
-            this.tbCondition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCondition.Margin = new System.Windows.Forms.Padding(2);
             this.tbCondition.Name = "tbCondition";
             this.tbCondition.SelectedIndex = 0;
             this.tbCondition.Size = new System.Drawing.Size(692, 340);
@@ -217,6 +224,7 @@
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 7;
             this.btnBack.Text = "Back";
+            this.ttBack.SetToolTip(this.btnBack, "Click to go back to Main Form");
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
@@ -227,6 +235,7 @@
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Close";
+            this.ttClose.SetToolTip(this.btnClose, "Click to close the program");
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -239,7 +248,7 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.tbCondition);
             this.Controls.Add(this.pnlTextbook);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Conditions";
             this.Text = "Conditions";
             this.pnlTextbook.ResumeLayout(false);
@@ -272,5 +281,9 @@
         private System.Windows.Forms.TabControl tbCondition;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.ToolTip ttBack;
+        private System.Windows.Forms.ToolTip ttClose;
+        private System.Windows.Forms.ToolTip ttQuality;
+        private System.Windows.Forms.ToolTip ttID;
     }
 }
